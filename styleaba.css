@@ -1,0 +1,152 @@
+      
+        :root{
+            --color-white: #fff;
+            --color-dark1: rgb(0, 0, 0);
+            --color-dark2: #000000;
+            --color-dark3: #030303;
+            --color-dark4: #000000;
+            --color-dark5: #000000;
+            --color-purple: #ffffff;
+        }
+
+        img{
+
+            height: 700px;
+            width: 800px;
+            
+            padding: 2rem;
+
+
+        
+        
+
+
+        }
+
+        iframe{
+
+
+            
+       
+            padding: 1rem;
+
+
+
+
+        }
+
+        
+                
+
+
+            #hs{
+
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 2rem;
+
+            }
+
+
+
+
+        #Vôlei{
+
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            
+
+
+
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(https://th.bing.com/th/id/R.757b41711af27acc2cd4d42436e2aefe?rik=aqWKGyLRDAPz8A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2f9%2fe%2f95677.jpg&ehk=kmth1t9GGn73hTGzeU8TarlYQqOZkuKQRGYUnmiEIpI%3d&risl=&pid=ImgRaw&r=0);
+            background-image: -moz-linear-gradient();
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--color-dark1);
+            color: var(--color-white);
+        }
+        .img_logo_header{
+            width: 45px;
+        }
+        .header,
+        .navigation_header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .header{
+            background-color: var(--color-dark2);
+            justify-content: space-between;
+            padding: 0 10%;
+            height: 3.5em;
+            box-shadow: 1px 1px 4px var(--color-dark4);
+        }
+        .navigation_header{
+            gap: 3em;
+            z-index: 2;
+        }
+        .content{
+            padding-top: 5em;
+            text-align: center;
+            height: 100vh;
+            transition: 1s;
+        }
+        .navigation_header a{
+            text-decoration: none;
+            color: var(--color-purple);
+            transition: 1s;
+            font-weight: bold;
+        }
+        .navigation_header a:hover{
+            color: var(--color-white);
+        }
+        .active{
+            background: var(--color-dark3);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn_icon_header{
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            cursor: pointer;
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .navigation_header{
+                position: absolute;
+                flex-direction: column !important;
+                top: 0;
+                background: var(--color-dark5);
+                height: 100%;
+                width: 35vw;
+                padding: 1em;
+                animation-duration: 1s;
+                margin-left: -100vw;
+            }
+            .btn_icon_header{
+                display: block;
+            }
+        }
+        @keyframes showSidebar {
+            from {margin-left: -100vw;}
+            to {margin-left: -10vw;}
+        }
+
+
+
+        .footer{
+            background-color: var(--color-dark2);
+            justify-content: space-between;
+            padding: 0 10%;
+            height: 3.5em;
+            box-shadow: 1px 1px 4px var(--color-dark4);
+        }        
